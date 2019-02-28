@@ -87,7 +87,7 @@ func Render(templateName string, args Args) (result []byte, err error) {
 	return
 }
 
-// Render but panic if error.
+// MustRender renders but panic if error.
 func MustRender(templateName string, args Args) []byte {
 	result, err := Render(templateName, args)
 	if err != nil {
